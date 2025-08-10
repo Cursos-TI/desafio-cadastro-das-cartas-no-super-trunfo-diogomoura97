@@ -3,7 +3,8 @@
 //Teste Diogo Moura
 
 int main() {
-    //"CARTA 1
+    
+    //CARTA 1
     
     char estado1 = "A";
     char codigocarta1 [4] = "A01";
