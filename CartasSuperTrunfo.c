@@ -6,12 +6,12 @@ int main() {
     
     //CARTA 1
     
-    char estado1 = "A";
+    char estado1;
     char codigocarta1 [4] = "A01";
     char nomecidade1 [30] = "Fortaleza";
-    int populacao 1= 500000;
-    float area1 = 2065.500;
-    float pib1= 800.00;
+    int populacao1 = 2428678;
+    float area1 = 312.353;
+    float pib1= 73.4;
     int numeropontosturisticos1 = 40;
     
     //ENTRADA DE DADOS DO USUÁRIO
@@ -43,12 +43,12 @@ int main() {
     
     //CARTA 2
     
-    char estado2 = "B";
+    char estado2;
     char codigocarta2 [4] = "B01";
     char nomecidade2 [30] = "Manaus";
-    int populacao2 = 80000;
-    float area2 = 1455.500;
-    float pib2 = 328.00;
+    int populacao2 = 2279686;
+    float area2 = 11401.092;
+    float pib2 = 103.28;
     int numeropontosturisticos2 = 13;
     
      //ENTRADA DE DADOS DO USUÁRIO
