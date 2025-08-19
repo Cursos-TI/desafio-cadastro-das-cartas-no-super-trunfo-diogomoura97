@@ -5,6 +5,8 @@
 
 int main() {
 
+    //****CARTA 1****
+   
     char estado1;
     char codigocarta1 [4] = "A01";
     char nomecidade1 [30] = "RioDeJaneiro";
@@ -31,6 +33,8 @@ int main() {
     scanf(" %f",&pib1);
     printf("Insira o número de pontos turísticos: ");
     scanf(" %d",&numeropontosturisticos1);
+
+    
    
     //NÍVEL AVENTUREIRO
 
@@ -43,8 +47,6 @@ int main() {
 
     //Saída dos dados
 
-    //Saída dos dados
-
     printf("Carta 1\n");
     printf("Estado: %c \n",estado1);
     printf("Código: %s \n",codigocarta1);
@@ -53,6 +55,8 @@ int main() {
     printf("PIB:  %.2f bilhões de reais \n",pib1);
     printf("Área: %2.f \n",area1);
     printf("Número de pontos turísticos: %d \n",numeropontosturisticos1);
+    printf("Densidade populacional: %.2f \n",densidadepopulacional1);
+    printf("PIB per capita: %.2f \n",pibpercapita1);
     
 
     //****CARTA 2****
@@ -92,8 +96,6 @@ int main() {
     
     //Saída dos dados
 
-    //Saída dos dados
-
     printf("Carta 2\n");
     printf("Estado: %c \n",estado2);
     printf("Código: %s \n",codigocarta2);
@@ -102,6 +104,8 @@ int main() {
     printf("PIB:  %.2f bilhões de reais \n",pib2);
     printf("Área: %2.f \n",area2);
     printf("Número de pontos turísticos: %d \n",numeropontosturisticos2);
+    printf("Densidade populacional: %.2f \n",densidadepopulacional2);
+    printf("PIB per capita: %.2f \n",pibpercapita2);
     
 }
 
