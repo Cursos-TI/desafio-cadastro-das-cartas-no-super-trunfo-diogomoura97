@@ -1,22 +1,105 @@
-#include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+    #include <stdio.h>
+
+//Teste Diogo Moura
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    //****CARTA 1****
+   
+    char estado1;
+    char codigocarta1 [4] = "A01";
+    char nomecidade1 [30] = "RioDeJaneiro";
+    unsigned long int populacao1 = 6748000;
+    float area1 = 1200.25;
+    float pib1= 300.50;
+    int numeropontosturisticos1 = 30;
+    
+    
+    //Entrada de dados do usuário
+
+    printf("Carta 1\n");
+    printf("Insira o estado: ");
+    scanf(" %c",&estado1);
+    printf("Insira o código da carta: ");
+    scanf(" %s",&codigocarta1);
+    printf("Insira o nome da cidade: ");
+    scanf(" %s",&nomecidade1);
+    printf("Insira o número da população: ");
+    scanf(" %lu",&populacao1);
+    printf("Insira a área (Km2): ");
+    scanf(" %f",&area1);
+    printf("Insira o PIB: ");
+    scanf(" %f",&pib1);
+    printf("Insira o número de pontos turísticos: ");
+    scanf(" %d",&numeropontosturisticos1);
+
+    //Cálculo da Densidade populacional e PIB per capita
+
+    float densidadepopulacional1 = (float) populacao1/area1;
+    float pibpercapita1 = (float) (pib1* 1000000000)/populacao1;
+    
+    //****CARTA 2****
+   
+    char estado2;
+    char codigocarta2 [4] = "B01";
+    char nomecidade2 [30] = "SãoPaulo";
+    unsigned long int populacao2 = 12325000;
+    float area2 = 1521.11;
+    float pib2 = 699.28;
+    int numeropontosturisticos2 = 50;
+    
+
+    //Entrada de dados do usuário
+
+    printf("Carta 2\n");
+    printf("Insira o estado: ");
+    scanf(" %c",&estado2);
+    printf("Insira o código da carta: ");
+    scanf(" %s",&codigocarta2);
+    printf("Insira o nome da cidade: ");
+    scanf(" %s",&nomecidade2);
+    printf("Insira o número da população: ");
+    scanf(" %lu",&populacao2);
+    printf("Insira a área (Km2): ");
+    scanf(" %f",&area2);
+    printf("Insira o PIB: ");
+    scanf(" %f",&pib2);
+    printf("Insira o número de pontos turísticos: ");
+    scanf(" %d",&numeropontosturisticos2);
+    
+     //Cálculo da Densidade populacional e PIB per capita
+
+    float densidadepopulacional2 = (float) populacao2/area2;
+    float pibpercapita2 = (float) (pib2* 1000000000)/populacao2;
+
+    //Cálculo do super poder
+
+    float superpoder1 = (float) ((populacao1+area1+pib1+numeropontosturisticos1+pibpercapita1)-densidadepopulacional1);
+    float superpoder2 = (float) ((populacao2+area2+pib2+numeropontosturisticos2+pibpercapita2)-densidadepopulacional2);
+    
+
+    //Comparação das cartas
+
+    int vencedorpopulacao = populacao1>populacao2;
+    int vencedorarea = area1>area2;
+    int vencedorpib = pib1>pib2;
+    int vencedorpontosturisticos = numeropontosturisticos1>numeropontosturisticos2 ;
+    int vencedordensidadepopulacional = densidadepopulacional1<densidadepopulacional2;
+    int vencedorpibpercapita = pibpercapita1>pibpercapita2;
+    int vencedorsuperpoder = superpoder1>superpoder2;
+
+    printf ("Resultado: 0 = Carta 1 vencedora | 1 = Carta 2 vencedora\n" );
+    printf ("Vencedor População: %d \n",vencedorpopulacao);
+    printf ("Vencedor Área: %d \n",vencedorarea);
+    printf ("Vencedor PIB: %d \n",vencedorpib);
+    printf ("Vencedor Número de pontos turísticos: %d \n",vencedorpontosturisticos);
+    printf ("Vencedor Densidade populacional: %d \n",vencedordensidadepopulacional);
+    printf ("Vencedor PIB per capita: %d \n",vencedorpibpercapita);
+    printf ("Vencedor Super poder: %d \n",vencedorsuperpoder);
+    
+   
+    
 }
+
+
